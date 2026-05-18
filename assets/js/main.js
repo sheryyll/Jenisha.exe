@@ -16,6 +16,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 const revealEls = document.querySelectorAll(
   '.about-grid, .about-lead, .about-body, .about-aside, ' +
   '.skills-grid, .skill-group, ' +
+  '.projects-grid, .project-card, ' +
   '.contact-wrapper, .contact-item'
 );
 
@@ -32,3 +33,5 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 
 revealEls.forEach(el => observer.observe(el));
+
+
